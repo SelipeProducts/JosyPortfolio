@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/josyporfolioEducationStyle.css">
+	</head>
+	<body>
+		<div class="content">
+			<table>
+                <tr>
+                	<td class = "tableList tdInContent" onClick="homeFunction()"> Home </td> 
+                    <td class = "tableList tdInContent" onClick="aboutFunction()"> About </td> 
+                    <td class = "tableList tdInContent" onClick="educationFunction()" style="color: gold; background-color: #0073CF;"> Education </td> 
+                    <td class = "tableList tdInContent" onClick="experiencesFunction()"> Experience </td>
+                </tr>
+            </table>
+		</div>
+		<div class="educationWrapper">
+			<table>
+				<tr valign="top">
+					<td rowspan="2">
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+					    		<div class="numbertext">1 / 3</div>
+					   			<img src="image/ucla_logo.png" class="imgHeight" style="width:100%">
+					    		<div class="text">  </div>
+					 		</div>
+
+							<div class="mySlides fade">
+					    		<div class="numbertext">2 / 3</div>
+					    		<img src="image/ucla_school.jpg" class="imgHeight" style="width:100%">
+					    		<div class="text"> </div>
+					  		</div>
+
+					  		<div class="mySlides fade">
+					    		<div class="numbertext">3 / 3</div>
+					    		<img src="image/ucla_campus_stairs.jpg" class="imgHeight" style="width:100%">
+					    		<div class="text"></div>
+
+
+					  			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<br>
+
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span> 
+						  <span class="dot" onclick="currentSlide(2)"></span> 
+						  <span class="dot" onclick="currentSlide(3)"></span>  
+						</div>
+					
+					</td> <th> University California, Los Angeles </th>
+				</tr>
+				<tr>
+					<td width="50%">
+						UCLA is one of the top universities in the US... 
+						<div class="uclaHidden">
+							<div id="widnow">
+								<div id="title_bar">
+								    <div id="button">-</div>
+								</div>
+
+							    <div id="box">
+									<h5> Required Classes for Major </h5>
+									<ul>
+										<li> Psychology 110 </li>
+										<li> Psychology 115 </li>
+										<li> Psychology 116 </li>
+										<li> Psychology 118 or EE Biol 100 or EE Biol 129 </li>
+										<li> Psychology 120A or Psychology 120B </li>
+										<li> Psychology 127 or 127A or 127B or... </li>
+									</ul>
+									<h5> Prerequirsites for Major </h5>
+									<ul>
+										<li> Life Sciences 1 & 2 & 3 & 4 & 23L </li>
+										<li> Chemistry 14A & 14B & 14BL & 14C & 14D //  </li>
+										<li> Mathematics 3A & 3B & 3C // </li>
+										<li> Physics 1A & 1B & 1C & 4AL & 4BL // </li>
+										<li> Psychology 10  </li>
+										<li> Psychology 100A* </li>
+										<li> Psychology 100B* </li>
+									</ul>
+									<h5> Electives </h5>
+									<ul> 
+										<li> EE Biol 112 or 113A or 114A </li>
+										<li> EE Biol 100, 102, 105, 106, 110, 111, 115, 117, C119A, 120, 121, 122, 124A*, 129, 135, 164, 170</li>
+										<li> Chemistry 153A, 153L</li>
+										<li> Computational and Systems Biology M187 </li>
+										<li> Microbiology, Immunology & Molecular Genetics 185A </li>
+										<li> Molecular, Cell, & Developmental Biology 100, 104AL, 138, M140, CM156 </li>
+										<li> Neuroscience 102 </li>
+										<li> Physiological Science C144, 146, 147, M148, 166, M173 </li>
+										<li> Psychology 111, 112A-112D, M117J, 119A-X, 137G, 152, 160, 161, 162, 164, M166, 186D, 191CH** M117A & M117B & M117C*** </li>
+										<li> 16 units of above will be selected*</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<td rowspan="2">
+						<div class="logoimg"><img clas="cph_logo"src="image/cph_logo.png"></div>
+					</td> 
+					<th> Castle Park High School </th>
+				</tr>
+				<tr>
+					<td> 
+						Located in Chula Vista.
+						<div class = "cphHidden">
+							<div id="widnow">
+							    <div id="title_bar">
+							        <div id="button2">-</div>
+							    </div>
+
+							    <div id="box2">
+									<h5> Classes </h5>
+									<ul>
+										<li> IB Biology SL & HL (11th & 12th) </li>
+										<li> IB Chemistry SL (12th)</li>
+										<li> IB World History (12th)</li>
+										<li> IB Spanish HL (12th) </li>
+										<li> IB/AP English SL & HL (11th & 12th)</li>
+										<li> Theory of Knowledge (11th) </li>
+										<li> IB/AP Math (Calculus) (12th) </li>
+										<li> AP US History (11th)</li>
+										<li> AP World History (10th)</li>
+										<li> Other Sweatwater High School District required classes</li>
+									</ul>
+							    </div>
+							</div>
+
+
+						</div>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+		<script src="jquery.js"></script>
+    	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+		<script type="text/javascript">
+            function homeFunction() {
+                window.location = "index.html";
+            }
+            function aboutFunction() {
+                window.location = "josyporfolioAbout.html";
+            }
+            function educationFunction() {
+                window.location = "josyporfolioEducation.html";
+            }
+            function experiencesFunction() {
+                window.location = "josyporfolioExperience.html";
+            }
+
+            //start slideshow JS
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1} 
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none"; 
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block"; 
+			  dots[slideIndex-1].className += " active";
+			}
+			//end slideshow JS
+
+
+
+			$("#button").click(function(){
+			    if($(this).html() == "-"){
+			        $(this).html("+");
+			    }
+			    else{
+			        $(this).html("-");
+			    }
+			    $("#box").slideToggle();
+			});
+
+			$("#button2").click(function(){
+			    if($(this).html() == "-"){
+			        $(this).html("+");
+			    }
+			    else{
+			        $(this).html("-");
+			    }
+			    $("#box2").slideToggle();
+			});
+
+        </script>
+	</body>
+</html>

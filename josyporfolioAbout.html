@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/josyportfolioAboutStyle.css">
+	</head>
+	<body>
+		<div class="content">
+			<table>
+                  <tr>
+                	<td class = "tableList tdInContent" onClick="homeFunction()"> Home </td> 
+                    <td class = "tableList tdInContent" onClick="aboutFunction()" style="color: gold; background-color: #0073CF;"> About </td> 
+                    <td class = "tableList tdInContent" onClick="educationFunction()"> Education </td> 
+                    <td class = "tableList tdInContent" onClick="experiencesFunction()"> Experience </td>
+                </tr>
+            </table>
+		</div>
+		<!--
+		<div class="imgAbout">
+			<img class = "imgHeight" src="image/headshot_josy.jpg">
+		</div>
+		-->
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+	    		<div class="numbertext">1 / 4</div>
+	   			<img src="image/thecrew.png" class="imgHeight" style="width:100%">
+	    		<div class="text">Group of old high school friends 2011 vs 2016</div>
+	 		</div>
+
+			<div class="mySlides fade">
+	    		<div class="numbertext">2 / 4</div>
+	    		<img src="image/josy(2).jpg" class="imgHeight" style="width:100%">
+	    		<div class="text"> CCM Leaders Together </div>
+	  		</div>
+
+	  		<div class="mySlides fade">
+	    		<div class="numbertext">3 / 4</div>
+	    		<img src="image/josy(3).jpg" class="imgHeight" style="width:100%">
+	    		<div class="text"> Winning the Noblest Trojen Award for the class of 2013<</div>
+	  		</div>
+	  	  		<div class="mySlides fade">
+	    		<div class="numbertext">4 / 4</div>
+	    		<img src="image/josy(4).jpg" class="imgHeight" style="width:100%">
+	    		<div class="text"> A picture in Irland from when I went to study abroad.</div>
+	  		</div>
+
+	  			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span>  
+		</div>
+
+		<div class= "AboutMe">
+			<h3 style="text-align:center"> About Me</h3>
+			<p>
+				Growing up I found myself moving constantly from city to city. This bouncing around led to many difficulties including having problems keeping friends. At a young age this isolation somewhat affected me but support and love from my family helped keep my life a little more stable. Separating my social life allowed me to start focusing and excelling at school from a young age. Late middle school would be when I finally settled in my current home located in Chula Vista to help accommodate my mother’s second job in Tijuana, Mexico. Being 15 minutes from the border this provided the perfect situation to allow my mom to transition between her two jobs. With a more stable environment the introduction of other obstacles followed. 
+			</p>
+			<P>
+				Entering high school balancing my social life and school became a more complicated and as a result my grades dropped. One day a friend had asked me what I planned on doing after high school. I replied with plans to get into a well-known University. At this point I can still remember my friend’s facial reaction and her reply about my grades not currently being good enough to achieve my plans. This was a major mental turn around in my mentality about my grades. Entering sophomore year, I made it my goal to take the most challenging courses my school had to offer. This included advance placement classes (AP) and eventually International Bachelorette (IB). In the end my hard work payed off and I was not only accepted to University California, Los Angeles (UCLA) but was granted the Gates Scholarship. 
+			</P>
+			<p>
+				After IB I always believed I was prepared for college. This ideology was flushed down the toilet after my first year in college. But no matter what issues I dealt with I pulled through. With the accomplishment of completing college, I can’t take all the credit as I have my friends and family who helped me survive 4 years of hell. 
+			</p>
+		</div>
+		<script type="text/javascript">
+			function homeFunction() {
+                window.location = "index.html";
+            }
+            function aboutFunction() {
+                window.location = "josyporfolioAbout.html";
+            }
+            function educationFunction() {
+                window.location = "josyporfolioEducation.html";
+            }
+            function experiencesFunction() {
+                window.location = "josyporfolioExperience.html";
+            }
+			//start slideshow JS
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1} 
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none"; 
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block"; 
+			  dots[slideIndex-1].className += " active";
+			}
+			//end slideshow JS
+		</script>
+	</body>
+</html>
