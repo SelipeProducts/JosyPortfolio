@@ -1,0 +1,109 @@
+html{
+    background-color: #0073CF;
+
+    background-position: 0 100%;
+}
+body {
+    margin: 0;
+    font-family: cursive;
+}
+h1, h4 {
+    display: inline-block;
+}
+h1 {
+    margin-right: 20px;
+}
+h4 {
+    font-weight: normal;
+}
+.tdInContent{
+    width: 25%;
+}
+.uclaImg{
+    width: 1200px;
+    height: 900px;
+    overflow:hidden;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+.uclaImg img{
+    margin: auto;
+} 
+.outerTextInImg{
+    position: absolute;
+    left: 50%;
+    top: 300px;
+}
+.textInImg{
+    background-color: #0073CF;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: -50%;
+    border: solid gold 3px;"
+
+}
+.outerQuoteInImg{
+    position: absolute;
+    left: 50%;
+    bottom: -180px;
+}
+.quoteInImg{
+    
+    color: gold;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: -50%;
+    
+
+}
+
+.content{
+    background-color: gold;
+    margin-bottom: 30px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    width: 102%;
+    position: relative;
+    
+  
+    right: 8px;
+    bottom: 8px;
+}
+.content td{
+    color: #0073CF;
+    background-color: gold;
+    border: solid #D4B16A 3px;
+    padding: 20px;
+    font-weight: bold;
+
+}
+.content table{
+    margin-right: auto;
+    margin-left: auto;
+}
+.tableList{
+    text-align: center;
+}
+.tableList:hover{
+    background-color: #0073CF;
+    color: gold;
+
+}
+
+.currentPage td{
+    color:#0073CF;
+    background-color: gold;
+}
+
+.footer{
+    background-color: lightblue;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

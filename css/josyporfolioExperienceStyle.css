@@ -1,0 +1,87 @@
+html{
+   background-color: #0073CF;
+}
+body{
+	 font-family: cursive;
+}
+p {
+    text-indent: 50px;
+}
+
+
+.content{
+    background-color: gold;
+    margin-bottom: 30px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    width: 102%;
+    position: relative;
+    bottom: 8px;
+    right: 8px;
+}
+.content td{
+    color: #0073CF;
+    background-color: gold;
+    border: solid #D4B16A 3px;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
+}
+.content table{
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.tdInContent{
+    width: 25%;
+}
+
+.tableList:hover{
+    background-color: #0073CF;
+    color: gold;
+}
+
+#experiencesWrapper h2 h4{
+    text-align: left;
+    border: solid gold 3px;"
+
+}
+#experiencesWrapper{
+    background-color: ;
+
+    
+}
+#experiencesWrapper2{
+    background-color: white;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: solid #D4B16A 3px;"
+}
+
+#experiencestableMain, table{
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+
+td .workname{
+    max-width:  900px;
+    width: 75%;
+}
+td .workdate{
+    max-width: 200px;
+    width: 25%
+
+}
+
+.footer{
+    background-color: lightblue;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
